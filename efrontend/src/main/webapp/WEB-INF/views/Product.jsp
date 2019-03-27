@@ -53,7 +53,7 @@
 </c:if>
 
 <c:if test="${!flag}">
-<form:form action="http://localhost:8080/Project_Frontend/updateProduct/${product.productId}" modelAttribute="product" method="post" enctype="multipart/form-data">
+<form:form action="http://localhost:8080/efrontend/updateProduct/${product.productId}" modelAttribute="product" method="post" enctype="multipart/form-data">
 <table align="center">
 
 <tr>
@@ -102,24 +102,24 @@
 <table align="center" class="table table-striped">
 <tr><td colspan="8"><center><h3><b>Product Detail</b></h3></center></td></tr>
 <tr>
-	<td><b><font face="verdana" color="gold">Product Id</font></b></td>
-	<td><b><font face="verdana" color="gold">Product Name</font></b></td>
-	<td><b><font face="verdana" color="gold">Product Description</font></b></td>
-	<td><b><font face="verdana" color="gold">Price</font></b></td>
-	<td><b><font face="verdana" color="gold">Stock</font></b></td>
-	<td><b><font face="verdana" color="gold">Category</font></b></td>
-	<td><b><font face="verdana" color="gold">Supplier</font></b></td>
-	<td><b><font face="verdana" color="gold">Operation</font></b></td>
+	<td><b><font face="verdana" color="black">Product Id</font></b></td>
+	<td><b><font face="verdana" color="black">Product Name</font></b></td>
+	<td><b><font face="verdana" color="black">Product Description</font></b></td>
+	<td><b><font face="verdana" color="black">Price</font></b></td>
+	<td><b><font face="verdana" color="black">Stock</font></b></td>
+	<td><b><font face="verdana" color="black">Category</font></b></td>
+	<td><b><font face="verdana" color="black">Supplier</font></b></td>
+	<td><b><font face="verdana" color="black">Operation</font></b></td>
 </tr>
 <c:forEach items="${productList}" var="product">
 <tr>
-	<td><font face="timesnewroman" color="yellow">${product.productId }</font></td>
-	<td><font face="timesnewroman" color="yellow">${product.productName }</font></td>
-	<td><font face="timesnewroman" color="yellow">${product.productDesc }</font></td>
-	<td><font face="timesnewroman" color="yellow">${product.price }</font></td>
-	<td><font face="timesnewroman" color="yellow">${product.quantity }</font></td>
-	<td><font face="timesnewroman" color="yellow">${product.categoryId}</font></td>
-	<td><font face="timesnewroman" color="yellow">${product.supplierId }</font></td>
+	<td><font face="timesnewroman" color="black">${product.productId }</font></td>
+	<td><font face="timesnewroman" color="black">${product.productName }</font></td>
+	<td><font face="timesnewroman" color="black">${product.productDesc }</font></td>
+	<td><font face="timesnewroman" color="black">${product.price }</font></td>
+	<td><font face="timesnewroman" color="black">${product.quantity }</font></td>
+	<td><font face="timesnewroman" color="black">${product.categoryId}</font></td>
+	<td><font face="timesnewroman" color="black">${product.supplierId }</font></td>
 	<td>
 	<a href="<c:url value="/deleteProduct/${product.productId }"/>" class="btn btn-danger">Delete</a>
 	<a href="<c:url value="/editProduct/${product.productId }"/>" class="btn btn-info">Edit</a>	

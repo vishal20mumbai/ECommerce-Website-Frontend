@@ -63,8 +63,8 @@ public class OrderController
 		orderDetail.setPmode(pmode);
 		orderDetail.setTotalShoppingAmount((int)this.calcGrandTotalValue(listCartItems));
 		orderDAO.insertOrderDetail(orderDetail);
+		return "Thankyou";
 		
-		return "ThankYou";
 	}
 	@RequestMapping(value="/Invoice")
 	public String showInvoice(@ModelAttribute("user")User user,HttpSession session,Model m)

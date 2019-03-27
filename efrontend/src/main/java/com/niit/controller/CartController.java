@@ -113,6 +113,7 @@ public class CartController
 		return "Cart";
 	}
 	
+
 	@RequestMapping(value="/CheckOut")
 	public String CheckOut(HttpSession session,Model m)
 	{
@@ -130,6 +131,8 @@ public class CartController
 		
 		return "OrderDetail";
 	}
+	
+	
 	
 	
 	public LinkedHashMap<Integer,String> getCartItemList(List<CartItem> CartItemlist)

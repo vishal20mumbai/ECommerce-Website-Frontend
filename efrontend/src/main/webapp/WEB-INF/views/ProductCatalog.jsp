@@ -1,12 +1,15 @@
 <%@include file="Header.jsp"%>
-<div class="container">
-	<div class="row">
+
+
+<div class="container-fluid">
+<div class="column">
+    <div class="col-sm-7" >
 		<c:forEach items="${productList}" var="product">
 			<div class="column">
 				<div class="col-md-4 col-xs-12 col-sm-6">
 				<div class="thumbnail">
 						<h4>
-					<span data-toggle="tooltip" title="Bootstrap version"><font face="timesnewroman" color="gold">${product.productName}&nbsp;
+					<span data-toggle="tooltip" title="Bootstrap version"><font face="timesnewroman" color="black">${product.productName}&nbsp;
 								Rs.${product.price}/-</font></span>
 				</h4>
 						<img src="<c:url value="/resources/images/${product.productId}.jpg"/>"width="250" height="250" alt="Image Not Supported"/> 

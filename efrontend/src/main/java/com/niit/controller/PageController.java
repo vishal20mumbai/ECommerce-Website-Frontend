@@ -73,4 +73,17 @@ public class PageController
 	{
 		return "AboutUs";
 	}
+	
+	@RequestMapping("/Response")
+	public String Response()
+	{
+		return "Response";
+	}
+	
+	@RequestMapping("/pay")
+	public String pay()
+	{
+		return "pay";
+	}
+
 }

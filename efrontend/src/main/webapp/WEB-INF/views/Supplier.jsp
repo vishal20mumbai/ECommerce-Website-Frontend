@@ -30,7 +30,7 @@
 </c:if>
 
 <c:if test="${!flag}">
-<form:form action="http://localhost:8080/Project_Frontend/UpdateSupplier/${supplier.supplierId}" modelAttribute="supplier" method="post">
+<form:form action="http://localhost:8080/efrontend/UpdateSupplier/${supplier.supplierId}" modelAttribute="supplier" method="post">
 <table align="center">
 
 <tr>
@@ -63,16 +63,16 @@
 <tr><td colspan="8"><center><h3><b>Supplier Detail</b></h3></center></td></tr>
 
 <tr>
-	<td><b><font face="verdana" color="gold">Supplier Id</font></b></td>
-	<td><b><font face="verdana" color="gold">Supplier Name</font></b></td>
-	<td><b><font face="verdana" color="gold">Supplier Address</font></b></td>
-	<td><b><font face="verdana" color="gold">Operation</font></b></td>
+	<td><b><font face="verdana" color="black">Supplier Id</font></b></td>
+	<td><b><font face="verdana" color="black">Supplier Name</font></b></td>
+	<td><b><font face="verdana" color="black">Supplier Address</font></b></td>
+	<td><b><font face="verdana" color="black">Operation</font></b></td>
 </tr>
 <c:forEach items="${supplierList}" var="supplier">
 <tr>
-	<td><font face="timesnewroman" color="yellow">${supplier.supplierId }</font></td>
-	<td><font face="timesnewroman" color="yellow">${supplier.supplierName }</font></td>
-	<td><font face="timesnewroman" color="yellow">${supplier.address }</font></td>
+	<td><font face="timesnewroman" color="black">${supplier.supplierId }</font></td>
+	<td><font face="timesnewroman" color="black">${supplier.supplierName }</font></td>
+	<td><font face="timesnewroman" color="black">${supplier.address }</font></td>
 	<td>
 	<a href="<c:url value="/deleteSupplier/${supplier.supplierId }"/>"class="btn btn-danger">Delete</a>
 	<a href="<c:url value="/editSupplier/${supplier.supplierId }"/>"class="btn btn-info">Edit</a>	

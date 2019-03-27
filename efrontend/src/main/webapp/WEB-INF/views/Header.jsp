@@ -1,10 +1,10 @@
-<body background="https://i.ytimg.com/vi/XzTCntGgNJU/maxresdefault.jpg">
+<body background="https://i.pinimg.com/originals/73/fb/f7/73fbf730caa914a42de358ef08519e62.jpg">
 <%@ page language="java" contentType="text/html"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
 <title>vishal-Mobile</title>
-<meta charset="utf-8">
+<meta charset="utf-6">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
 <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -20,6 +20,8 @@
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="Home">Vishal Mobile</a>
+				<p> <span class="glyphicon glyphicon-phone"></span></p>
+				
 			</div>
 			
 			<c:if test="${!sessionScope.loggedIn }">
@@ -34,20 +36,19 @@
 				<ul class="nav navbar-nav">			
 				<li class="active"><a href="<c:url value="/Home"/>">Home</a>
 				<li><a href="<c:url value="/ProductCatalog"/>">Product Catalog</a></li>
+				<li><a href="<c:url value="/Cart"/>">Your Cart</a></li>
 				
 			</ul>
 			</c:if></c:if>
 			<c:if test="${sessionScope.loggedIn }">
 				<c:if test="${sessionScope.role=='ROLE_ADMIN' }">
 				<ul class="nav navbar-nav navbar-right">
-			  
-				
-				
+
 				  <div  class="dropdown">
     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" >
       Admin Management
     </button>
-     <div class="dropdown-menu dropdown-menu-right">
+     <div class="dropdown-menu dropdown-menu-down">
                     <li><a href="<c:url value="/User"/>">Manage User</a></li>
 					<li><a href="<c:url value="/Product"/>">Manage Product</a></li>
 					<li><a href="<c:url value="/Category"/>">Manage Category</a></li>

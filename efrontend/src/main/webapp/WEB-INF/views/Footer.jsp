@@ -24,7 +24,7 @@ footer
 		<div class="container">
 			<div class="centered clearfix"></div>
 			<div class="bottom-bar">
-		<center><font size="2" color="gold">	Copyright &copy; vishalmobile.com
+		<center><font size="3" color="blue">	Copyright &copy; vishalmobile.com
 			</a> All Rights Reserved © 2019 | <a href="<c:url value="/AboutUs"/>">About Us</a> | <a href="<c:url value="/ContactUs"/>">Contact Us</a>
 		</font></center>
 			</div>

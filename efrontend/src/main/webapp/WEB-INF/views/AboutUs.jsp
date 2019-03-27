@@ -52,7 +52,7 @@
 			</div>
 			<div class="about-inner-section">	
 			    <div class="col-md-6 about-right">
-				<img src="resources/images/moto4.jpg" Width="250" height="250" alt=" ">
+				<img src="resources/images/moto4.jpg" Width="350" height="350" alt=" ">
 			</div>
 				<div class="col-md-6 about-inner-column">
 					<h4>Please vist our Website  </h4>
